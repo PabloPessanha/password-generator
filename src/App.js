@@ -9,9 +9,16 @@ function App() {
   return (
     <div className="App">
       <h1>Random password generator</h1>
-      <input type="number" onChange={ ({ target }) => setSize(target.value) } />
+      <h2>{`${size} caracteres de senha`}</h2>
+      <input
+        type="range"
+        min="6"
+        max="18"
+        value={ size }
+        onChange={ ({ target }) => setSize(Math.round(target.value)) }
+      />
       <ButtonGenerator size={ size } setPassword={ setPassword } />
-      { password && <h2>{password}</h2>}
+      { password && <h4>{password}</h4>}
     </div>
   );
 }
