@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App h1 {
+  margin: 32px ;
+  color: #E6A245;
+}
+
+.App h2 {
+  color: #303030;
+  font-size: 32px
+}
+
+span.chars-qty {
+  color: #aaa;
+  font-weight: 700;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #FDC858;
+  border-radius: 10px;
+  width: 160px;
+  height: 16px;
+  cursor: pointer;
+  margin: 16px auto;
+  overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+  background-color: #FDC858;
+  border-radius: 50%;
+  box-shadow: -210px 0 0 200px #E6A245;
+  width: 24px;
+  height: 18px;
+}
+
+button.pass-btn {
+  border: none;
+  background-color: #FDC858;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 32px;
+  padding: 6px;
+  transition: 0.1s ease-in;
+}
+
+button.pass-btn:hover {
+  filter: contrast(120%);
+}
+
+.password {
+  border-radius: 3px;
+  display: flex;
+  margin: 20px auto;
+  background-color: #aaa;
+  color: #303030;
+  padding: 10px;
+  width: min-content;
+}
+
+.password button {
+  border: none;
+  background-color: inherit;
+}

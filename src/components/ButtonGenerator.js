@@ -14,7 +14,11 @@ const ButtonGenerator = ({ size, setPassword }) => {
     setPassword(randomPassword);
   }
 
-  return <button type="button" onClick={ generateRandomPassword }>Gerar senha</button>;
+  return (
+    <button type="button" onClick={ generateRandomPassword } className="pass-btn">
+      Generate Password
+    </button>
+  );
 };
 
 export default ButtonGenerator;
